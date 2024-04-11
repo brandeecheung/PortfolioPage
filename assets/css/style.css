@@ -16,7 +16,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: var(--primary);
+  color: black;
   background-color: var(--light);
   line-height: 1.5;
 }
@@ -38,14 +38,14 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  background-color: var(--tertiary);
+  background-color: rgb(255 255 255);
   box-shadow: 0 5px 35px rgba(156, 211, 199, 0.4);
 }
 
 header h1 {
-  color: var(--tertiary);
-  background-color: var(--secondary);
-  padding: 5px 1% 5px 6%;
+  color: rgb(255 255 255);
+  background-color: rgba(0, 0, 0, 0.641);
+  padding: 5px 1% 5px 5%;
   margin: 0;
   font-size: 4vw;
   line-height: 1;
@@ -65,11 +65,11 @@ nav {
 nav a {
   text-decoration: none;
   padding: 2px 15px;
-  color: var(--secondary);
+  color: black;
   margin-right: 10px;
   background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
   background-repeat: no-repeat;
-  background-size: 80% 0.2em;
+  background-size: 80% 0.09em;
   background-position: bottom;
   transition: all 0.20s ease-in;
   font-size: 1.2rem;
@@ -96,25 +96,25 @@ main {
 /* banner styles */
 
 .hero-banner {
-  --hero-bg-image: url("../images/02-hero-bg.jpg");
-  --gradient-start: var(--secondary);
-  --gradient-end: var(--primary);
-  --overlay-color: #00e1fa;
-
-  background-image: var(--hero-bg-image), linear-gradient(180deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+  --hero-image: url(../images/hero.jpg);
+  --gradient-start: rgb(114 128 128);
+  --gradient-end: rgb(185 216 218);
+  --overlay-color: #bce8ed;
+  background-image: var(--hero-image), linear-gradient(180deg, var(--gradient-start) 0%, rgb(135 135 135) 100%);
   background-size: cover;
   background-position: center;
   background-blend-mode: soft-light;
-  min-height: 30vh;
+  min-height: 40vh;
   color: var(--light);
-  padding: 2% 6%;
+  padding: 2%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   text-align: right;
   position: relative;
-  line-height: 0;
+  line-height: normal;
 }
+
 
 .hero-banner::after {
   content: '';
@@ -123,17 +123,18 @@ main {
   height: 100%;
   top: 0;
   left: 0;
-  mix-blend-mode: multiply;
+  mix-blend-mode: screen;
   background: var(--overlay-color);
   opacity: 0.13;
 }
 
+/*
 .hero-banner > img {
   -webkit-filter: brightness(104%) contrast(104%) grayscale(0%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(122%) sepia(0%);
   filter: brightness(104%) contrast(104%) grayscale(0%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(122%) sepia(0%);
   mix-blend-mode: none;
 }
-
+*/
 .hero-banner div {
   flex: 0 0 90%;
 }
@@ -173,13 +174,13 @@ main {
   flex: 0 0 20%;
   text-align: right;
   padding-right: 15px;
-  border-right: 4px solid var(--primary);
+  border-right: 2px solid var(--secondary);
   font-size: 4vw;
   line-height: 1.1;
 }
 
 .page-section > div {
-  flex: 0 0 77%;
+  flex: 0 75%;
 }
 
 .page-section p {
@@ -195,7 +196,7 @@ main {
 }
 
 .flex-item {
-  border: 5px solid var(--secondary);
+  border: 2px solid var(--secondary);
   background-color: var(--primary);
   color: var(--tertiary);
   min-height: 150px;
@@ -209,7 +210,6 @@ main {
   background-blend-mode: soft-light;
   background-size: 150%;
   transition: all 0.5s;
-  font-size: 0.9rem;
 }
 
 
@@ -266,22 +266,22 @@ main {
   background-image: url("../images/mini-project.jpg");
 }
 
-/* portfolio project image continued placeholder code */
+/* portfolio project images (my photography as placeholders) */
 
 .work1 {
-  background-image: url("../images/placeholder1.jpg");
+  background-image: url("../images/MyPhoto1.jpg");
 }
 
 .work2 {
-  background-image: url("../images/placeholder2.jpg");
+  background-image: url("../images/MyPhoto2.jpg");
 }
 
 .work3 {
-  background-image: url("../images/placeholder3.jpg");
+  background-image: url("../images/MyPhoto3.jpg");
 }
 
 .work4 {
-  background-image: url("../images/placeholder4.jpg");
+  background-image: url("../images/MyPhoto4.jpg");
 }
 
 
