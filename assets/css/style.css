@@ -4,8 +4,8 @@
 
 /* brand color palette */
 :root {
-  --primary: rgb(100, 128, 115);
-  --secondary: rgb(153, 192, 176);
+  --primary: rgba(139, 148, 185, 0.56);
+  --secondary: rgb(153, 161, 192);
   --tertiary: rgb(39, 40, 43);
   --dark: rgb(0, 0, 0);
   --light: rgba(238, 238, 247, 1);
@@ -17,7 +17,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: black;
-  background-color: var(--light);
+  background-color: var(--dark);
   line-height: 1.5;
 }
 
@@ -38,12 +38,12 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  background-color: rgb(255 255 255);
-  box-shadow: 0 5px 35px rgba(156, 211, 199, 0.4);
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 5px 35px rgba(112, 97, 130, 0.4);
 }
 
 header h1 {
-  color: rgb(255 255 255);
+  color: var(--secondary);
   background-color: rgba(0, 0, 0, 0.641);
   padding: 5px 1% 5px 5%;
   margin: 0;
@@ -65,9 +65,9 @@ nav {
 nav a {
   text-decoration: none;
   padding: 2px 15px;
-  color: black;
+  color: white;
   margin-right: 10px;
-  background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
+  background-image: linear-gradient(270deg, var(--primary) 0%, var(--secondary) 100%);
   background-repeat: no-repeat;
   background-size: 80% 0.09em;
   background-position: bottom;
@@ -77,7 +77,7 @@ nav a {
 
 nav a:hover {
   background-size: 100% 100%;
-  color: var(--primary);
+  color: var(--light);
 }
 
 nav a:last-child {
@@ -140,8 +140,8 @@ main {
 }
 
 .hero-banner h2 {
-  --header-bg-color: var(--secondary);
-  --header-text-color: var(--tertiary);
+  --header-bg-color: var(--primary);
+  --header-text-color: var(--light);
 
   background-color: var(--header-bg-color);
   color: var(--header-text-color);
@@ -185,6 +185,7 @@ main {
 
 .page-section p {
   margin-bottom: 20px;
+  color: var(--secondary);
 }
 
 /* flex styles */ 
@@ -241,12 +242,11 @@ main {
 }
 
 .contact address a {
-  color: var(--tertiary);
+  color: var(--light);
   padding: 5px;
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-style: normal;
-  background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: bottom;
@@ -269,19 +269,19 @@ main {
 /* portfolio project images (my photography as placeholders) */
 
 .work1 {
-  background-image: url("../images/MyPhoto1.jpg");
+  background-image: url("../images/blogshot.png");
 }
 
 .work2 {
-  background-image: url("../images/MyPhoto2.jpg");
+  background-image: url("../images/weathershot.png");
 }
 
 .work3 {
-  background-image: url("../images/MyPhoto3.jpg");
+  background-image: url("../images/taskboardshot.png");
 }
 
 .work4 {
-  background-image: url("../images/MyPhoto4.jpg");
+  background-image: url("../images/stockshot.png");
 }
 
 
